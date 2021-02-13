@@ -16,5 +16,13 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (BackColor == Color.Gray)
+                this.BackColor = Color.Black;
+            else
+                BackColor = Color.Gray;
+        }
     }
 }

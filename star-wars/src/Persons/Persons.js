@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 export function Persons (){
     const baseURL='https://swapi.dev/api/people/'
@@ -13,18 +13,18 @@ export function Persons (){
     },[])
 
     return (
-        <div className="container">
+        <div className="container p">
             <h2 className="text-center mt-3">Persons</h2>
             <div className="row">
-                <ul className="list-group m-2 col-4">
+                <ul className="list-group mb-2 col-4">
                     { person.results.map(p=>
                     
                             <li key={p.name} className="list-group-item m-1 btn btn-secondary">
-                                <Link key={p.name} to={`${p.url.substring(29)}`}><h3>{p.name}</h3></Link>
+                                <Link  key={p.name} to={`${p.url.substring(29)}`}><h3>{p.name}</h3></Link>
                             </li>
                             )}
                 </ul>
-            <div className="col-7">
+            <div className="col">
                 <Outlet/>
             </div>
             </div>

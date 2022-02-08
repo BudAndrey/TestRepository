@@ -8,7 +8,32 @@ export function Person(props){
     const [planet,setPlanet]=useState({})
     const [starships,setStarships]=useState([])
     const [vehicles,setVehicles]=useState([])
-    const [films,setFilms]=useState([])
+    const [films,setFilms]=useState([]) 
+    const [imgURL,setURL]=useState('')
+
+    function setUrl (){
+        if (id==='1'){
+            setURL('https://www.space-figuren.de/images/product_images/info_images/22002_1.jpg')
+        }
+        if (id==='2'){
+            setURL('https://www.artmajeur.com/medias/standard/c/l/clementereira/artwork/12378956_img-20190110-133709.jpg')}
+        if (id==='3')
+            setURL('https://media.istockphoto.com/photos/full-size-r2d2-picture-id472287728?k=20&m=472287728&s=170667a&w=0&h=aFgiTOF563xr2iN1nzMdIc-yXmHTc_v0jk1OlhIkuNk=')
+        if (id==='4')
+            setURL('https://cs10.pikabu.ru/post_img/big/2020/09/12/11/1599940594141150219.jpg')
+        if (id==='5')
+            setURL('http://images2.fanpop.com/image/photos/9300000/leia-princess-leia-organa-solo-skywalker-9301455-893-1400.jpg')
+        if (id==='6')
+            setURL('https://i.pinimg.com/564x/a3/70/59/a37059cb4745a51d1421abb96b50c837.jpg')
+        if (id==='7')
+            setURL('https://wookiee.ru/wp-content/uploads/2014/01/berulars_detail.png')
+        if (id==='8')
+            setURL('https://images-na.ssl-images-amazon.com/images/I/91CTs1kIfVL._AC_SX569_.jpg')
+        if (id==='9')
+            setURL('https://wiki.swgoh.help/images/f/fa/Unit-Character-Biggs_Darklighter.png')
+        if (id==='10')
+            setURL('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4c9Hp8JnKZNZSFxjaTawQ6SpxQRYlOt0oaA&usqp=CAU')
+        }
 
     useEffect(async ()=>{
         const response=await fetch(url)
@@ -18,6 +43,9 @@ export function Person(props){
         const res=await fetch(person.homeworld)
         const planet=await res.json()
         setPlanet(planet)
+        setUrl()
+        
+        console.log(imgURL);
 
         if(person.starships.length!=0){
             const arr=[]
@@ -70,7 +98,7 @@ export function Person(props){
                          {/* <div className="d-flex justify-content-between "> */}
                          <div className='row'>
                             <div className='col-4 ' >
-                                <img className='w-100' src='https://www.space-figuren.de/images/product_images/info_images/22002_1.jpg' />
+                                <img className='w-100' src={imgURL} />
                             </div>
                         <div className="d-flex justify-content-center col-8"> 
                             <div className="m-2" style={{fontSize: 1.3 +'em'}}>

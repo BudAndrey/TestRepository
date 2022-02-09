@@ -20,7 +20,7 @@ const routing =(
   <Router>
     <nav className="navbar navbar-dark bg-dark">
       <div className="container-fluid justify-content-around">
-        <Link to="/Persons" className="btn btn-outline-primary me-2" >Persons</Link>
+        <Link to="/Persons/" className="btn btn-outline-primary me-2" >Persons</Link>
         <Link to="/films" className="btn btn-outline-primary me-2" >Films</Link>
         <Link to="/Planets" className="btn btn-outline-primary me-2" >Planets</Link>
         <Link to="/Starships" className="btn btn-outline-primary me-2" >Starships</Link>
@@ -33,9 +33,15 @@ const routing =(
       <Route path="/films" element={<Films/>}>
           <Route path=":id" element={<Film/>}/>
       </Route>
-      <Route path="/persons" element={<Persons/>}>
-          <Route path=":id" element={<Person/>}/>
+      <Route path="/persons/" element={<Persons/>}>
+          <Route path=":id" element={<Person/>}/>  
+          
       </Route>
+      {/* <Route path="persons/?page=" element={<App/>}>
+          <Route path=":id" element={<Persons/>}/>
+      </Route> */}
+      
+      
       <Route path="/planets" element={<Planets/>}>
           <Route path=":id" element={<Planet/>}/>
       </Route>

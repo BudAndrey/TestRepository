@@ -13,8 +13,8 @@ export function Films(){
     },[])
 
     return (
-        <div className="container">
-            <h2 className="text-center mt-3">Films</h2>
+        <div className="container ms-3 me-5">
+            <h1 className="text-center mt-3">Films</h1>
             <div className="row">
                 <ul className="list-group m-2 col-4">
                     { films.results.map((f)=>
@@ -24,9 +24,9 @@ export function Films(){
                             </li>
                             )}
                 </ul>
-            <div className="col">
-                <Outlet/>
-            </div>
+                <div className="col">
+                    <Outlet/>
+                </div>
             </div>
         </div>
 

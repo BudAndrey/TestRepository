@@ -18,7 +18,7 @@ export function Planets(props){
 
     return (
         <div className="container">
-            <h2 className="text-center mt-3">Planets</h2>
+            <h1 className="text-center mt-3">Planets</h1>
         <div className="row">
             <ul className="list-group m-2 col-4">
                 { planets.results.map(p=>

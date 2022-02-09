@@ -72,7 +72,7 @@ export function Film(props){
     },[id])
 
     return(
-        <div className='card m-4 text-center sticky-top'>
+        <div className='card m-2 text-center sticky-top'>
             <div className="p-2">
                 <h2 className='card-title'>{film.title}</h2>
                 <h4>director: {film.director}</h4>

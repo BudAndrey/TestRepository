@@ -37,6 +37,12 @@ const routing =(
           <Route path=":id" element={<Person/>}/>  
           
       </Route>
+      <Route path="/persons/next/:page" element={<Persons key={Date.now()} />}></Route>
+      {/* <Route path="/persons/?page=:page" element={<Persons/>}/> */}
+      {/* <Route path="/persons/?page=/" element={<App/>}> */}
+            
+          
+      
       {/* <Route path="persons/?page=" element={<App/>}>
           <Route path=":id" element={<Persons/>}/>
       </Route> */}

@@ -1,27 +1,24 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { BrowserRouter, Link, NavLink, Outlet, Route, Routes, useParams } from "react-router-dom";
 
-export function Persons (){
-    const baseURL='https://swapi.dev/api/people/'
+export function Persons (props){
+    const {page}=useParams()
+    
+        const baseURL=page==undefined?'https://swapi.dev/api/people/':`https://swapi.dev/api/people/?page=${page}`
     const [person,setPerson]=useState({results:[]})
+    // const [next,setNext]=useState();
+    const [next,setNext]=useState();
 
-    //const baseURL=`https://swapi.dev/api/people/?page=`
-//    const  [page,setPage]=useState(1)
-//    console.log(page)
+    
 
 
-    // function nextPage(){
-    //     //setPage(page +1)
-    //     setPage(page+1)
-    //     console.log(page);
-         
-    // }
     useEffect(async ()=>{
         // const response=await fetch(baseURL+page)
+        console.log(baseURL)
         const response=await fetch(baseURL)
         // console.log(baseURL+page)
         const person=await response.json()
-        // setPage(page+1)
+        setNext(person.next.substring(35))
         setPerson(person)
     },[])
 
@@ -29,13 +26,14 @@ export function Persons (){
         <div className="container ">
             
             <h1 className="text-center mt-3">Persons</h1>
-            {/* <Link  to={`?page=${page}`} className="btn btn-primary m-1"> next</Link> */}
+            
+            <Link to={`/persons/next/${next}`}  className="btn btn-primary m-1"> next</Link>
             <div className="row">
                 <ul className="list-group mb-2 col-4 ">
                     { person.results.map(p=>
                     
                             <li key={p.name} className="list-group-item m-1 btn btn-secondary ">
-                                <Link  key={p.name} to={`${p.url.substring(29)}`}><h3>{p.name}</h3></Link>
+                                <Link  key={p.name} to={`/persons/${p.url.substring(29)}`}><h3>{p.name}</h3></Link>
                             </li>
                             )}
                 </ul>

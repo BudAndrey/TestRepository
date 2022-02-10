@@ -35,25 +35,15 @@ const routing =(
       </Route>
       <Route path="/persons/" element={<Persons/>}>
           <Route path=":id" element={<Person/>}/>  
-          
       </Route>
-      <Route path="/persons/next/:page" element={<Persons key={Date.now()} />}></Route>
-      {/* <Route path="/persons/?page=:page" element={<Persons/>}/> */}
-      {/* <Route path="/persons/?page=/" element={<App/>}> */}
-            
-          
-      
-      {/* <Route path="persons/?page=" element={<App/>}>
-          <Route path=":id" element={<Persons/>}/>
-      </Route> */}
-      
-      
+      <Route path="/persons/next/:page" element={<Persons />}></Route>
       <Route path="/planets" element={<Planets/>}>
           <Route path=":id" element={<Planet/>}/>
       </Route>
       <Route path="/starships" element={<Starships/>}>
           <Route path=":id" element={<Starship/>}/>
       </Route>
+      <Route path="/starships/next/:page" element={<Starships />}></Route>
       <Route path="/vehicles" element={<Vehicles/>}>
           <Route path=":id" element={<Vehicle/>}/>
       </Route>

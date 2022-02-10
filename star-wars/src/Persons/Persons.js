@@ -3,31 +3,38 @@ import { BrowserRouter, Link, NavLink, Outlet, Route, Routes, useParams } from "
 
 export function Persons (props){
     const {page}=useParams()
-    
-        const baseURL=page==undefined?'https://swapi.dev/api/people/':`https://swapi.dev/api/people/?page=${page}`
+    const baseURL=page==undefined?'https://swapi.dev/api/people/':`https://swapi.dev/api/people/?page=${page}`
     const [person,setPerson]=useState({results:[]})
-    // const [next,setNext]=useState();
-    const [next,setNext]=useState();
-
+    const [next,setNext]=useState(null);
+    const [prev,setPrev]=useState(null);
+    const [tmp,setTmp]=useState(Date.now());
     
+    function change (){
+        setTmp(Date.now())
+    }
 
+    function setButtons (json){
+        const checkPrev=json.previous===null?null:json.previous.substring(35)
+        const checkNext=json.next===null?null:json.next.substring(35)
+        setNext(checkNext)
+        setPrev(checkPrev)
+    }
 
     useEffect(async ()=>{
-        // const response=await fetch(baseURL+page)
-        console.log(baseURL)
         const response=await fetch(baseURL)
-        // console.log(baseURL+page)
         const person=await response.json()
-        setNext(person.next.substring(35))
+        setButtons(person)
         setPerson(person)
-    },[])
+    },[tmp])
 
     return (
         <div className="container ">
             
             <h1 className="text-center mt-3">Persons</h1>
-            
-            <Link to={`/persons/next/${next}`}  className="btn btn-primary m-1"> next</Link>
+            <div className="col-4 m-1 d-flex justify-content-around">
+                <Link onClick={change}  to={`/persons/next/${prev}`}  className={prev===null?"btn btn-secondary disabled m-1 w-25":"btn btn-secondary m-1 w-25"}>prev</Link>
+                <Link onClick={change}  to={`/persons/next/${next}`}  className={next===null?"btn btn-secondary disabled m-1 w-25":"btn btn-secondary m-1 w-25"}>next</Link>
+            </div>
             <div className="row">
                 <ul className="list-group mb-2 col-4 ">
                     { person.results.map(p=>

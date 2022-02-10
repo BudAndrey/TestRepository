@@ -1,5 +1,6 @@
 import { Link,useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { VehicleImg } from '../Data/PersonData'
 
 export function Vehicle(){
     const [veh,setVeh]=useState({pilots:[],films:[]})
@@ -7,11 +8,13 @@ export function Vehicle(){
     const [films,setFilms]=useState([])
     const {id}=useParams()
     const url=`https://swapi.dev/api/vehicles/${id}`
+    const [imgURL,setURL]=useState('')
 
     useEffect( async ()=>{
         const response=await fetch(url)
         const veh=await response.json()
         setVeh(veh)
+        setURL(VehicleImg(id))
         
         if(veh.pilots.length!=0){
             const arr=[]
@@ -44,7 +47,9 @@ export function Vehicle(){
     return(
         <div  className='card m-4 text-center sticky-top'>
         <h2 className='card-title'>{veh.name}</h2>
-
+        <div className='w-75 ms-auto me-auto'>
+            <img className='w-100' src={imgURL} />
+        </div>
         <div className="d-flex justify-content-center"> 
             <div className="m-2">
                     <div className="m-2">model: <b>{veh.model}</b></div>

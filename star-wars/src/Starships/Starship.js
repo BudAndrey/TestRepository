@@ -1,5 +1,6 @@
 import { Link,useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { StarshipsImg } from '../Data/PersonData'
 
 export function Starship(){
     const [starship,setShip]=useState({pilots:[],films:[]})
@@ -7,13 +8,14 @@ export function Starship(){
     const [films,setFilms]=useState([])
     const {id}=useParams()
     const url=`https://swapi.dev/api/starships/${id}`
+    const [imgURL,setURL]=useState('')
 
     useEffect( async ()=>{
         const response=await fetch(url)
         const starship=await response.json()
         setShip(starship)
+        setURL(StarshipsImg(id))
         
-        console.log(starship);
         if(starship.pilots.length!=0){
             const arr=[]
             for (let i = 0; i < starship.pilots.length; i++) {
@@ -21,9 +23,6 @@ export function Starship(){
                 let pilot=await res.json()
                 arr.push(pilot)
             }
-            // starship.pilots.forEach(el => {
-            //    fetch(el).then(x=>x.json()).then((y)=>arr.push(y))
-            // });
             setPilots(arr)
         }
         else 
@@ -44,7 +43,9 @@ export function Starship(){
     return(
         <div  className='card m-4 text-center sticky-top'>
         <h2 className='card-title'>{starship.name}</h2>
-
+        <div className='w-75 ms-auto me-auto'>
+            <img className='w-100' src={imgURL} />
+        </div>
         <div className="d-flex justify-content-center"> 
             <div className="m-2">
                     <div className="m-2">model: <b>{starship.model}</b></div>

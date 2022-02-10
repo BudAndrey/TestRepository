@@ -9,6 +9,7 @@ export function Planets(props){
         fetch(url)
                 .then(x=>x.json())
                     .then((p)=>setPlanets(p))
+    
         // const response= await fetch(url)
         // const p= await response.json()
         

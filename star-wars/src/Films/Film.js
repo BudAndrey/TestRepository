@@ -1,22 +1,23 @@
 import { Link, useLocation,useParams } from 'react-router-dom'
 import {Outlet} from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { FilmImg } from '../Data/PersonData';
 
-export function Film(props){
-    // const location = useLocation()
-    // const url=location.state
+export function Film(){
     const {id}=useParams();
     const url=`https://swapi.dev/api/films/${id}`
     const [film,setFilms]=useState({characters:[],planets:[],starships:[],vehicles:[]})
     const [persons,setPersons]=useState([])
     const [planets,setPlanets]=useState([])
     const [starships,setStarships]=useState([])
-    const [vehicles,setVehicles]=useState([])
+    const [vehicles,setVehicles]=useState([]) 
+    const [imgURL,setURL]=useState('')
 
     useEffect(async ()=>{
         const response=await fetch(url)
         const film=await response.json()
         setFilms(film)
+        setURL(FilmImg(id));
 
         if(film.characters.length!=0){
             const arr=[]
@@ -44,46 +45,47 @@ export function Film(props){
         else 
             setPlanets([])
 
-            if(film.starships.length!=0){
-                const arr=[]
-                for (let i = 0; i < film.starships.length; i++) {
-                    let res2= await fetch(film.starships[i])
-                    let ship=await res2.json()
-                    arr.push(ship)
-                }
-                setStarships(arr)
+        if(film.starships.length!=0){
+            const arr=[]
+            for (let i = 0; i < film.starships.length; i++) {
+                let res2= await fetch(film.starships[i])
+                let ship=await res2.json()
+                arr.push(ship)
             }
-    
-            else 
-                setStarships([])
+            setStarships(arr)
+        }
 
-                if(film.vehicles.length!=0){
-                    const arr=[]
-                    for (let i = 0; i < film.vehicles.length; i++) {
-                        let res2= await fetch(film.vehicles[i])
-                        let ship=await res2.json()
-                        arr.push(ship)
-                    }
-                    setVehicles(arr)
-                }
-        
-                else 
-                    setVehicles([])
+        else 
+            setStarships([])
+
+        if(film.vehicles.length!=0){
+            const arr=[]
+            for (let i = 0; i < film.vehicles.length; i++) {
+                let res2= await fetch(film.vehicles[i])
+                let ship=await res2.json()
+                arr.push(ship)
+            }
+            setVehicles(arr)
+        }
+
+        else 
+            setVehicles([])
     },[id])
 
     return(
         <div className='card m-2 text-center sticky-top'>
             <div className="p-2">
-                <h2 className='card-title'>{film.title}</h2>
+                <h1 className='card-title'>{film.title}</h1>
                 <h4>director: {film.director}</h4>
                 <h5>release_date: {film.release_date}</h5>
+                <img className='w-50 text-center m-2' src={imgURL}></img>
                 <p>{film.opening_crawl}</p>
             </div>
             <h5>Characters</h5>
                 <ul className="list-inline">
                 {persons.map((ch)=>
                     <Link key={ch.name} to={`/persons/${ch.url.substring(29)}`} >
-                        <li key={ch.name} className="list-inline-item m-2">{ch.name}</li>
+                        <li key={ch.name} className="list-inline-item m-2 ">{ch.name}</li>
                      </Link>
                 )}
                 <h5>Planets</h5>

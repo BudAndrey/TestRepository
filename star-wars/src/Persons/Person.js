@@ -72,7 +72,7 @@ export function Person(props){
                         <Link to={`/planets/${person.homeworld?.substring(30)}`}>
                             <h4> {planet.name}</h4>
                         </Link>
-                         {/* <div className="d-flex justify-content-between "> */}
+                    
                          <div className='row'>
                             <div className='col-4 ' >
                                 <img className='w-100' src={imgURL} />

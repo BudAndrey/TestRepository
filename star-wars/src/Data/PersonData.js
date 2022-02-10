@@ -20,7 +20,6 @@ export function PersonImg (id){
         return 'https://wiki.swgoh.help/images/f/fa/Unit-Character-Biggs_Darklighter.png'
     if (id==='10')
         return 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4c9Hp8JnKZNZSFxjaTawQ6SpxQRYlOt0oaA&usqp=CAU'
-    
     if (id==='11')
         return 'https://static.wikia.nocookie.net/starwars/images/6/6f/Anakin_Skywalker_RotS.png'
     if (id==='12')
@@ -45,8 +44,106 @@ export function PersonImg (id){
         return 'https://i.pinimg.com/originals/f6/c1/de/f6c1de72cccb4ddb114f7bb74f448a62.jpg'
     if (id==='83')
         return 'https://static.wikia.nocookie.net/starwars/images/e/e8/TionMedonchron.jpg'
-
-        
+    if (id==='22')
+        return 'https://cdn2.unrealengine.com/fortnite-boba-fett-576x576-505d7d67fa9e.jpg'
+    if (id==='23')
+        return 'https://wiki.swgoh.help/images/5/51/Unit-Character-IG-88.png'
+    if (id==='24')
+        return 'https://i.pinimg.com/originals/04/9f/b4/049fb433bf08f0d0e71590620d09e28e.jpg'
+    if (id==='25')
+        return 'https://www.twilight-zone.nl/WebRoot/Pins/Shops/Twilightzone/5F6E/0D6E/7685/D4F6/2375/0A0C/05B8/B99A/SSHOT907059_0_ml.jpg'
+    if (id==='26')
+        return 'https://i.pinimg.com/originals/a7/3f/04/a73f04751d804b9aebece1ec94ea7090.jpg'
+    if (id==='27')
+        return 'https://i.pinimg.com/564x/c3/6a/1e/c36a1e403fb28f232838d93b93feac9d.jpg'
+    if (id==='28')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/4/46/Monmothma.jpg'
+    if (id==='29')
+        return 'https://static.wikia.nocookie.net/starwarscardtrader/images/9/96/ArvelCrynyd-A-WingPilot-White-Front.png'
+    if (id==='30')
+        return 'https://i.pinimg.com/originals/f6/8c/36/f68c360915aa654a7c0af42f7f29a195.png'
+    if (id==='31')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/1/14/Old_nien_nunb_-_profile.png'
+    if (id==='32')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/d/d6/QuiGonPortrait-SWE.jpg'
+    if (id==='33')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/f/fd/Nute_Gunray_SWE.png'
+    if (id==='34')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/5/51/ValorumPortrait-SWE.png'
+    if (id==='35')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/c/cb/%D0%9F%D0%B0%D0%B4%D0%BC%D0%B5_%D0%90%D0%BC%D0%B8%D0%B4%D0%B0%D0%BB%D0%B0.png'
+    if (id==='36')
+        return 'https://static.wikia.nocookie.net/esstarwars/images/a/ab/Jarjar.jpg'
+    if (id==='37')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/c/ca/%D0%A0%D1%83%D1%81_%D0%A2%D0%B0%D1%80%D0%BF%D0%B0%D0%BB%D1%8C%D1%81.jpg'
+    if (id==='38')
+        return 'https://static.wikia.nocookie.net/starwars/images/6/63/BossNass-SWCT.png'
+    if (id==='39')
+        return 'https://starwars.ru/media/cache/26/29/2629be3415bd1f4af8d6d98d251cfc77.png'
+    if (id==='40')
+        return 'https://static.wikia.nocookie.net/starwars/images/1/1b/Watto-SWE.png'
+    if (id==='41')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/1/14/Sebulba_Headshot_Closeup.png'
+    if (id==='42')
+        return 'https://images-cdn.9gag.com/photo/a5NqX2E_700b.jpg'
+    if (id==='43')
+        return 'https://i.pinimg.com/originals/cc/a3/a1/cca3a10ca1e10c2a6bb81b5ba54a9e4e.png'
+    if (id==='44')
+        return 'https://static.wixstatic.com/media/a3bcb6_995071045a514f1d956a4b61e9780816~mv2.jpg/v1/fill/w_498,h_665,al_c,q_85,usm_0.66_1.00_0.01/a3bcb6_995071045a514f1d956a4b61e9780816~mv2.jpg'
+    if (id==='45')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/3/33/BibFortunaHS-ROTJ.png'
+    if (id==='46')
+        return 'https://static.wikia.nocookie.net/star-wars-canon-extended/images/3/3d/Aayla4.jpg'
+    if (id==='47')
+        return 'https://static.wikia.nocookie.net/starwars/images/a/a5/RattsHS-SWE.png'
+    if (id==='48')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/8/89/250px-Sebulbaprmo.jpg'
+    if (id==='49')
+        return 'https://static.wikia.nocookie.net/starwars/images/a/a4/GasganoHS-SWE.png'
+    if (id==='50')
+        return 'https://static.wikia.nocookie.net/starwars/images/0/02/BenQuadinarosHS-SWE.png'
+    if (id==='51')
+        return 'https://upload.wikimedia.org/wikipedia/en/b/bf/Mace_Windu.png'
+    if (id==='52')
+        return 'https://static.wikia.nocookie.net/starwars/images/6/6d/KiAdiMundi-SWCT.png'
+    if (id==='53')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/d/de/%D0%9A%D0%B8%D1%82_%D0%A4%D0%B8%D1%81%D1%82%D0%BE.png'
+    if (id==='54')
+        return 'https://wiki.swgoh.help/images/c/c4/Unit-Character-Eeth_Koth.png'
+    if (id==='55')
+        return 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1dbc1935-6542-4ee3-822f-135cff4ba62c/ddrz6it-cb0e6c73-afd5-40bf-928c-8df07ea16e3c.png/v1/fill/w_566,h_1412,strp/stass_allie___transparent__by_speedcam_ddrz6it-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUzMyIsInBhdGgiOiJcL2ZcLzFkYmMxOTM1LTY1NDItNGVlMy04MjJmLTEzNWNmZjRiYTYyY1wvZGRyejZpdC1jYjBlNmM3My1hZmQ1LTQwYmYtOTI4Yy04ZGYwN2VhMTZlM2MucG5nIiwid2lkdGgiOiI8PTYxNSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.EBhNOHjfcaddBiw2n4TiBFW2Bkl_F0c2IFvau-hvIYM'
+    if (id==='56')
+        return 'https://static.wikia.nocookie.net/starwars/images/a/a3/SaeseeTiin-SWCT.png'
+    if (id==='57')
+        return 'https://static.wikia.nocookie.net/starwars/images/4/4f/Yarael_Poof_USW.png'
+    if (id==='58')
+        return 'https://static.wikia.nocookie.net/theclonewiki/images/4/44/Plo_Koon_%281%29.png'
+    if (id==='59')
+        return 'https://static.wikia.nocookie.net/starwars/images/3/37/Mas_Amedda_SWCT.png'
+    if (id==='60')
+        return 'https://i.pinimg.com/originals/56/4c/75/564c757171c56d012ccf277e13fc84e1.jpg'
+    if (id==='61')
+        return 'https://i.pinimg.com/originals/d8/bc/36/d8bc36174acdf28f7bad003e1d029050.jpg'
+    if (id==='62')
+        return 'https://static.wikia.nocookie.net/starwars/images/5/58/ClieggLarsDetail-SWE.png'
+    if (id==='63')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/9/93/Poggle_the_lesser_-_sw_card_trader.png'
+    if (id==='64')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/9/93/Unduli.png'
+    if (id==='65')
+        return 'https://wiki.swgoh.help/images/a/a0/Unit-Character-Barriss_Offee.png'
+    if (id==='66')
+        return 'https://static.wikia.nocookie.net/swfanon/images/4/45/475px-Dormesenate.jpg'    
+    if (id==='67')
+        return 'https://upload.wikimedia.org/wikipedia/en/5/58/Count_Dooku_%28Christopher_Lee%29.png'    
+    if (id==='68')
+        return 'https://starwarsblog.starwars.com/wp-content/uploads/2016/05/bail-organa-2.jpg'
+    if (id==='69')
+        return 'https://geekzona.ru/upload/iblock/020/Figurka-Jango-Fett-_-Hot-Toys-MMS589-Star-Wars-16-_8_.jpg'
+    if (id==='70')
+        return 'https://static.wikia.nocookie.net/star-wars-canon-extended/images/0/07/Zam2.jpg'
+    if (id==='71')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/1/14/Dexter.png'
 }
 
 export function PlanetImg(id){

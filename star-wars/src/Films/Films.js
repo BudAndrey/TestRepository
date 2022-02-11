@@ -14,8 +14,8 @@ export function Films(){
     return (
         <div className="container ms-3 me-5 ">
             <h1 className="text-center mt-3">Films</h1>
-            <div className="">
-                <ul className="list-group m-2 col-4 ">
+            <div className="row">
+                <ul className="list-group m-2 col-3 ">
                     { films.results.map((f)=>
                     
                             <li key={f.episode_id} className="list-group-item m-1 btn btn-secondary">

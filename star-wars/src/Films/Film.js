@@ -1,5 +1,4 @@
 import { Link, useLocation,useParams } from 'react-router-dom'
-import {Outlet} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { FilmImg } from '../Data/PersonData';
 
@@ -97,16 +96,15 @@ export function Film(){
             <h5>Starships</h5>
             {starships.map((st)=>
                 <Link key={st.name} to={`/starships/${st.url.substring(32)}`}>
-                    <li key={st.name} className="list-inline-item m-2">Starship {st.name}</li>
+                    <li key={st.name} className="list-inline-item m-2">{st.name}</li>
                 </Link>
             )}
                 <h5>Vehicles</h5>
             {vehicles.map((v)=>
-                <Link key={v.name} to={`/starships/${v.url.substring(31)}`}>
-                    <li key={v.name} className="list-inline-item m-2">Vehicle {v.name}</li>
+                <Link key={v.name} to={`/vehicles/${v.url.substring(31)}`}>
+                    <li key={v.name} className="list-inline-item m-2">{v.name}</li>
                 </Link>
             )}
-                
             </ul>
         </div>
     )

@@ -36,18 +36,19 @@ const routing =(
       <Route path="/persons/" element={<Persons/>}>
           <Route path=":id" element={<Person/>}/>  
       </Route>
-      <Route path="/persons/next/:page" element={<Persons />}></Route>
+      <Route path="/persons/page/:page" element={<Persons />}/>
       <Route path="/planets" element={<Planets/>}>
           <Route path=":id" element={<Planet/>}/>
       </Route>
+      <Route path="/planets/page/:page" element={<Planets />}/>
       <Route path="/starships" element={<Starships/>}>
           <Route path=":id" element={<Starship/>}/>
       </Route>
-      <Route path="/starships/next/:page" element={<Starships />}></Route>
+      <Route path="/starships/page/:page" element={<Starships />}/>
       <Route path="/vehicles" element={<Vehicles/>}>
           <Route path=":id" element={<Vehicle/>}/>
       </Route>
-
+      <Route path="/vehicles/page/:page" element={<Vehicles />}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
   </Router>

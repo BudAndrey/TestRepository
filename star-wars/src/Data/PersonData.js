@@ -144,6 +144,26 @@ export function PersonImg (id){
         return 'https://static.wikia.nocookie.net/star-wars-canon-extended/images/0/07/Zam2.jpg'
     if (id==='71')
         return 'https://static.wikia.nocookie.net/rustarwars/images/1/14/Dexter.png'
+    if (id==='72')
+        return 'https://static.wikia.nocookie.net/theclonewiki/images/4/4e/Lamasu.JPG'
+    if (id==='73')
+        return 'https://m.media-amazon.com/images/I/71Z+GIyo+QL._AC_SY550_.jpg'
+    if (id==='74')
+        return 'https://i.ebayimg.com/images/g/OroAAOSwqR5d7Gdg/s-l300.jpg'
+    if (id==='75')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/c/c3/R4p17gadgets.jpg'
+    if (id==='76')
+        return 'https://i.pinimg.com/originals/90/93/1b/90931befbc9b08c69d80e1ba05267e44.png'    
+    if (id==='77')
+        return 'https://static.wikia.nocookie.net/starwars/images/4/4f/San_hill.jpg'    
+    if (id==='78')
+        return 'https://static.wikia.nocookie.net/swfanon/images/6/6e/ShaakTi_tfu.jpg'
+    if (id==='79')
+        return 'https://i.pinimg.com/originals/d7/b2/8b/d7b28ba2c77e4ce2d061b84df1fc1ea7.jpg'
+    if (id==='80')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/3/37/Tarfful_RotS.png'
+    if (id==='81')
+        return 'https://i.pinimg.com/474x/f6/f4/68/f6f468786238e6248a56e87699dcd95a.jpg'
 }
 
 export function PlanetImg(id){
@@ -167,6 +187,106 @@ export function PlanetImg(id){
         return 'https://static.wikia.nocookie.net/rustarwars/images/1/16/Coruscant-EotE.jpg'
     if (id==='10')
         return 'https://static.wikia.nocookie.net/swgames/images/d/d4/Kamino.png'
+    if (id==='11')
+        return 'https://static.wikia.nocookie.net/shaniverse/images/5/59/Geonosis.jpg'
+    if (id==='12')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/c/ce/UtapauRotS.png'
+    if (id==='13')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/6/61/Mustafar-TROSGG.png'
+    if (id==='14')
+        return 'https://static.wikia.nocookie.net/starwars/images/d/d0/Kashyyyk_FFGRebellion.png'
+    if (id==='15')
+        return 'https://comicvine.gamespot.com/a/uploads/square_small/4/48250/902468-fondor.jpg'
+    if (id==='16')
+        return 'https://static.wikia.nocookie.net/starwars/images/7/76/Mygeeto_TEA.jpg'
+    if (id==='17')
+        return 'https://cdna.artstation.com/p/assets/images/images/032/467/710/large/shiny-man-felucia-icon-black.jpg?1606523143'
+    if (id==='18')
+        return 'https://static.wikia.nocookie.net/star-wars-canon/images/c/c0/CatoNeimoidia-SS.png'
+    if (id==='19')
+        return 'https://static.wikia.nocookie.net/starwars/images/a/a3/Saleucami_MPQ.png'
+    if (id==='20')
+        return 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a5b8dc94-de3a-4c5e-b12b-e7e0590fa969/d32k9ri-fe3ee88e-d293-4afb-b9a5-789baeaac77f.png/v1/fill/w_900,h_675,strp/stock_planet_01_by_regulus36_d32k9ri-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD02NzUiLCJwYXRoIjoiXC9mXC9hNWI4ZGM5NC1kZTNhLTRjNWUtYjEyYi1lN2UwNTkwZmE5NjlcL2QzMms5cmktZmUzZWU4OGUtZDI5My00YWZiLWI5YTUtNzg5YmFlYWFjNzdmLnBuZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xSmnOH6EnSJxUn60gALJ6gFlr0yWGAhpZeDDSqAhTa4'
+    if (id==='21')
+        return 'https://static.wikia.nocookie.net/starwars/images/d/dc/Eriadu_TEA.jpg'
+    if (id==='22')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/7/7f/Corellia_SOF.png'
+    if (id==='23')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/0/07/RodiaNEGAS.jpg'
+    if (id==='24')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/8/8d/Nal-hutta.png'
+    if (id==='25')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/a/a5/Dantooine_Resistance.jpg'
+    if (id==='26')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/7/79/Bestine_TEA.png'
+    if (id==='27')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/3/36/Ord_Mantell_EotECR.png'
+    if (id==='28')
+        return 'https://static.wikia.nocookie.net/starwars/images/0/04/Canon_galaxy_map.jpg'
+    if (id==='29')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/6/63/%D0%A2%D1%80%D0%B0%D0%BD%D0%B4%D0%BE%D1%88%D0%B0.png'
+    if (id==='30')
+        return 'https://static.wikia.nocookie.net/star-wars-extended-universe/images/5/5f/Alderaan.png'
+    if (id==='31')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/2/24/Mon_Cala_SWCT.png'
+    if (id==='32')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/9/9b/Chandrila_AoRCR.png'
+    if (id==='33')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/2/2d/SullustAoR.png'
+    if (id==='34')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/b/ba/Toydaria_LoNH.png'
+    if (id==='35')
+        return 'https://static.wikia.nocookie.net/starwars/images/0/00/Malastare_TEA.jpg'
+    if (id==='36')
+        return 'https://static.wikia.nocookie.net/starwars/images/3/34/DathomirJFO.jpg'
+    if (id==='37')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/d/d3/Ryloth_EotECR.png'
+    if (id==='38')
+        return 'https://static.wikia.nocookie.net/starwars/images/f/f6/Aleen_NEGAS.jpg'
+    if (id==='39')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/b/be/Vulpter_FF7.jpg'
+    if (id==='40')
+        return 'https://64.media.tumblr.com/16c87a18a3c99bbfbb2484d3f0dd6889/9b680d6290d3c946-75/s250x250_c1/9df251ac2ee74004a28b92a82eba88018cf02a63.png'
+    if (id==='41')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/2/27/Tundatlas.jpg'
+    if (id==='42')
+        return 'https://static.wikia.nocookie.net/starwarsofthecaribbean/images/6/6f/Jungle_Planet_Resource.jpg'
+    if (id==='43')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/c/cc/Cerea-FDCR.png'
+    if (id==='44')
+        return 'https://static.wikia.nocookie.net/starwars/images/0/0c/GleeAnselm.jpg'
+    if (id==='45')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/c/c5/Iridonia.jpg'
+    if (id==='46')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/1/15/Carida.jpg'
+    if (id==='47')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/f/f1/Iktotch_FDNP.png'
+    if (id==='48')
+        return 'https://static.wikia.nocookie.net/starwars/images/2/29/Quermia_NEGAS.jpg'
+    if (id==='49')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/9/9b/Dorin-FDCR.png'
+    if (id==='50')
+        return 'https://img.swcombine.com//galaxy/planets/custom/large/6166.gif'
+    if (id==='51')
+        return 'https://www.jediholo.net/wp-content/uploads/2019/08/Mirial_Planet_Preview.png'
+    if (id==='52')
+        return 'https://static.wikia.nocookie.net/starwars/images/b/b2/Serenno-Massacre.png'
+    if (id==='53')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/7/72/Concord-dawn_4277a880.jpeg'
+    if (id==='54')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/6/66/Zolan.jpg'
+    if (id==='55')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/8/8c/%D0%9E%D0%B4%D0%B6%D0%BE%D0%BC.jpg'
+    if (id==='56')
+        return 'https://static.wikia.nocookie.net/starwars/images/5/5b/Skako-Minor-ADE.png'
+    if (id==='57')
+        return 'https://static.wikia.nocookie.net/starwars/images/1/19/Muunilinst.jpg'
+    if (id==='58')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/b/b8/ShiliNEGAS.jpg'
+    if (id==='59')
+        return 'https://static.wikia.nocookie.net/starwars/images/c/c1/Kalee_TEA.jpg'
+    if (id==='60')
+        return 'https://static.wikia.nocookie.net/rustarwars/images/e/e4/Umbara_SWTOR.png'
 }
 
 export function FilmImg(id){
@@ -281,4 +401,65 @@ export function VehicleImg(id){
         return 'https://i.pinimg.com/originals/78/59/5e/78595e74b9327659740a81f0833cd98b.jpg'
     if (id==='24')
         return 'https://sportshub.cbsistatic.com/i/2021/03/16/90cd4b99-3f76-4c9c-993e-2974983393f8/star-wars-jabbas-sail-barge-hasbro-crowdfund-1085664.jpg'
+    if (id==='25')
+        return 'https://i.pinimg.com/originals/5a/1f/d6/5a1fd63ec21d2c3e1f3ae8ec8a953825.jpg'
+    if (id==='26')
+        return 'https://squir.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/4/1/41898.jpg'
+    if (id==='30')
+        return 'https://www.sideshow.com/storage/product-images/906340/scout-trooper-and-speeder-bike_star-wars_gallery_5ea1d10fb7594.jpg'
+    if (id==='33')
+        return 'https://www.seekpng.com/png/detail/228-2282325_sa-vd-star-wars-vulture-droid-png.png'
+    if (id==='34')
+        return 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0dc8eb0-7eb3-4716-b7a1-4364a45acdc0/dantcic-ef87c295-5d8a-4acf-b263-a41b58a2df3b.jpg/v1/fill/w_1131,h_707,q_70,strp/baw_multi_troop_transport__mtt__ortho__updated__by_unusualsuspex_dantcic-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjUwMCIsInBhdGgiOiJcL2ZcL2UwZGM4ZWIwLTdlYjMtNDcxNi1iN2ExLTQzNjRhNDVhY2RjMFwvZGFudGNpYy1lZjg3YzI5NS01ZDhhLTRhY2YtYjI2My1hNDFiNThhMmRmM2IuanBnIiwid2lkdGgiOiI8PTQwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.9vGCeNTdCQS-ByjSIoBXXt4Hj5wRcMsSiNRX8Lsqux0'
+    if (id==='35')
+        return 'https://i.pinimg.com/originals/f7/d5/51/f7d551bef7e55f5f495a35fbcb9b01a7.png'
+    if (id==='36')
+        return 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/182f1491-5d02-4568-9e5b-2ebaf3bd1ddf/dbt87ga-ebf963c0-8d26-4b00-adf1-4f0576174c09.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE4MmYxNDkxLTVkMDItNDU2OC05ZTViLTJlYmFmM2JkMWRkZlwvZGJ0ODdnYS1lYmY5NjNjMC04ZDI2LTRiMDAtYWRmMS00ZjA1NzYxNzRjMDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.DtraWcFMBFk90fsnWUFGCxrKaRu5HohPvjDAStPK278'
+    if (id==='37')
+        return 'https://i.pinimg.com/originals/a4/e4/46/a4e4462961265c05462d70e93580b9d1.jpg'
+    if (id==='38')
+        return 'https://img.swcombine.com//vehicles/39/large.jpg'
+    if (id==='42')
+        return 'https://www.toysheroes.com/pub/media/catalog/product/cache/1/image/e9c3970ab036de70892d86c6d221abfe/h/o/hot-toys-dx17-star-wars-episode-i-the-phantom-menace-darth-maul-with-sith-speeder-banner.jpg'
+    if (id==='44')
+        return 'https://i.ibb.co/kMJPNv0/brandon-robinson-robinsonb-assignment-3-exterior-1.jpg'
+    if (id==='45')
+        return 'https://swrpggm.com/wp-content/uploads/2020/12/Koro-2-AirspeederFE.png'
+    if (id==='46')
+        return 'https://swglegends.com/wiki/images/thumb/8/80/Xj-6.jpg/450px-Xj-6.jpg'
+    if (id==='50')
+        return 'https://i.pinimg.com/originals/1b/1c/71/1b1c715023ba9f8c330ad815b3f70ca7.jpg'
+    if (id==='51')
+        return 'https://only-paper.ru/_ld/71/70023171.jpg'
+    if (id==='53')
+        return 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/star-wars-episode-7/d/d2/AT-TEWalker_Pic03.jpg?width=1280'
+    if (id==='54')
+        return 'https://starforge.info/wp-content/uploads/2019/7/image-1300.jpg'
+    if (id==='55')
+        return 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84d44311-4aa5-472d-b391-42b113229ca0/ddda0hk-6421730c-8109-4ff3-b9cf-a076e9e477c0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZDQ0MzExLTRhYTUtNDcyZC1iMzkxLTQyYjExMzIyOWNhMFwvZGRkYTBoay02NDIxNzMwYy04MTA5LTRmZjMtYjljZi1hMDc2ZTllNDc3YzAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fMsqmA33W05YFPn4QtApQcLAz6LnR5FiaYFqv1mho5k'
+    if (id==='56')
+        return 'https://swmodel.ru/wp-content/uploads/2011/05/sheathipede_class_transport_ortho__new__by_unusualsuspex-d8f2g6c.jpg'
+    if (id==='57')
+        return 'https://i.pinimg.com/600x315/6e/4d/ee/6e4dee70b3a4cab335a9e49862184226.jpg'
+    if (id==='60')
+        return 'https://i.pinimg.com/originals/f8/bf/ba/f8bfbabe0ad35c86d7b52a366ba10fcd.jpg'
+    if (id==='62')
+        return 'https://i.pinimg.com/originals/44/14/40/441440cec986d37987950e39488fbf6b.jpg'
+    if (id==='67')
+        return 'https://media.sketchfab.com/models/2517de834ad7418ea367ecdacd13524c/thumbnails/2cf49cc2919b41f6a3089fd160de3d5c/4fb58fb65f504b3a84b51ce90ab67ed6.jpeg'
+    if (id==='69')
+        return 'https://i.pinimg.com/736x/48/9e/d7/489ed7b5ca78c3b65b9ca07901c7bb08--catamaran-spaceships.jpg'
+    if (id==='70')
+        return 'https://i.ytimg.com/vi/IJVV6Tuzfxg/maxresdefault.jpg'
+    if (id==='71')
+        return 'https://m.media-amazon.com/images/I/51DJSDTPCTL.jpg'
+    if (id==='72')
+        return 'https://rpggamer.org/shippics/catankdroid.jpg'
+    if (id==='73')
+        return 'https://i.ytimg.com/vi/w7nsYhpjrdA/maxresdefault.jpg'
+    if (id==='76')
+        return 'https://b.3ddd.ru/media/cache/tuk_model_custom_filter_ru/model_images/0000/0000/2652/2652271.5e02490711e8d.jpeg'
+    
+    
+    
 }

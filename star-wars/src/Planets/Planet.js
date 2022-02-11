@@ -25,6 +25,8 @@ export function Planet (){
             }
             setFilms(arr)
         }
+        else 
+            setFilms([])
 
         if(planet.residents.length!=0){
             const arr=[]
@@ -35,10 +37,8 @@ export function Planet (){
             }
             setPersons(arr)
         }
-
         else 
             setPersons([])
-
     },[id])
 
     return (

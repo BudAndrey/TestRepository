@@ -72,7 +72,6 @@ export function Person(props){
                         <Link to={`/planets/${person.homeworld?.substring(30)}`}>
                             <h4> {planet.name}</h4>
                         </Link>
-                    
                          <div className='row'>
                             <div className='col-4 ' >
                                 <img className='w-100' src={imgURL} />
@@ -95,19 +94,19 @@ export function Person(props){
                             {starships.length!==0 ? <h5>Starships</h5>:''}
                                 {starships.map((st)=>
                                     <Link key={st.name} to={`/starships/${st.url.substring(32)}`}>
-                                         <li key={st.name} className="list-inline-item m-2">Starship {st.name}</li>
+                                         <li key={st.name} className="list-inline-item m-2">{st.name}</li>
                                     </Link>
                                 )}
                             {vehicles.length!==0 ? <h5>Vehicles</h5>:''}
                                 {vehicles.map((v)=>
                                     <Link key={v.name} to={`/starships/${v.url.substring(31)}`}>
-                                        <li key={v.name} className="list-inline-item m-2">Vehicle {v.name}</li>
+                                        <li key={v.name} className="list-inline-item m-2">{v.name}</li>
                                     </Link>
                                 )}
                             {films.length!==0 ? <h5>Films</h5>:''}
                                 {films.map((f)=>
                                     <Link key={f.title} to={`/films/${f.url.substring(28)}`}>
-                                        <li key={f.title} className="list-inline-item m-2">Vehicle {f.title}</li>
+                                        <li key={f.title} className="list-inline-item m-2">{f.title}</li>
                                     </Link>
                                 )}
                         </ul>
